@@ -7,10 +7,6 @@ const fs = require('fs');
 const bot = new Discord.Client();
 bot.login(auth.token);
 
-bot.on('ready', () => {
-	bot.user.setActivity('Abdullah\'s house burn', {type: 3})
-});
-
 bot.on('message', (message) => {   
 	if (message.author.bot) return;
     let con = message.content;
